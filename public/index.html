@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UCIRP – Coimbatore Urban Complaint Intelligence & Resolution Platform</title>
+<meta name="description" content="UCIRP: Urban Complaint Intelligence & Resolution Platform for Coimbatore">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><button class="logo" onclick="goHome()" aria-label="UCIRP home"><span class="mark">U</span><span><b>UCIRP</b><small>Coimbatore City Municipal Corporation</small></span></button><div class="sp"></div>
+<span class="chip" id="chip" hidden></span><button id="share" hidden aria-pressed="false"></button><button id="lang" aria-label="Toggle Tamil or English">தமிழ் / EN</button><button id="out" hidden>Sign out</button></header>
+<div class="demo">Working model: accounts, complaints and photos are saved on this server. CivicFix AI is a simulated rule engine, and SMS/WhatsApp are simulated as in-app notifications. CCMC control room 0422-2302323.</div>
+<div id="off" role="status" hidden></div>
+<div class="layout"><nav id="nav" aria-label="Main"></nav><main id="main"><div class="card">Loading…</div></main></div>
+<button id="upd" class="b shadow-lg" hidden onclick="render()">New updates · tap to refresh</button>
+<div id="toast" role="status"></div>
+<script src="vendor/chart.umd.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script src="i18n.js"></script>
+<script src="mapbase.js"></script>
+<script src="city-algorithms.js"></script>
+<script src="app.js"></script>
+</body></html>

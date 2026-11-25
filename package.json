@@ -1,0 +1,14 @@
+{
+  "name": "ucirp",
+  "version": "1.0.0",
+  "description": "UCIRP - Urban Complaint Intelligence & Resolution Platform (Coimbatore). Node.js server (the mongodb driver is only needed when MONGODB_URI is set).",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/workflow.test.js",
+    "build:css": "npx --yes tailwindcss@3.4.17 -c tailwind.config.js -i src/tailwind.css -o public/styles.css --minify"
+  },
+  "dependencies": { "mongodb": "^6.10.0" },
+  "engines": { "node": ">=16" }
+}
